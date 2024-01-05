@@ -32,7 +32,7 @@ jobs:
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@0.4.0
       with:
-         environment-url: ${{secrets.POWERPLATFORMDEVURL}}
+         environment-url: ${{secrets.PowerPlatformDevUrl}}
          app-id: ${{secrets.PowerPlatformAppID}}
          client-secret: ${{ secrets.PowerPlatformClientSecret }}
          tenant-id: ${{secrets.PowerPlatformTenantID}}
@@ -41,7 +41,7 @@ jobs:
     - name: export-managed-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: ${{secrets.POWERPLATFORMDEVURL}}
+        environment-url: ${{secrets.PowerPlatformDevUrl}}
         app-id: ${{secrets.PowerPlatformAppID}}
         client-secret: ${{ secrets.PowerPlatformClientSecret }}
         tenant-id: ${{secrets.PowerPlatformTenantID}}
